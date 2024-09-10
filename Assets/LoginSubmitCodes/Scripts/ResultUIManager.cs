@@ -108,13 +108,11 @@ public class ResultUIManager : MonoBehaviour
     {
         if (IsGameWin)
         {
-            Debug.Log("wint");
             gameWinUI.SetActive(true);
             WinTrigger();
         }
         else
         {
-            Debug.Log("loset");
             gameOverUI.SetActive(true);
             LoseTrigger();
         }
@@ -146,7 +144,9 @@ public class ResultUIManager : MonoBehaviour
 
     public void ChangeLoadingText(long responseCode)
     {
-        retrySubmitScoreButton.interactable = true;
+        if (responseCode != 200) {
+            retrySubmitScoreButton.interactable = true;
+        }
         PlayReceiveRespondSFX();
         loadingTextSubmitScene.ChangeTextThenFadeOut(responseCode);
     }
