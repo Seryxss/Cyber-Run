@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/LoginSubmitCodes/LoginScene.unity
     guid: 5743e07dfd0b3e34b88b14132465a972
   - enabled: 1
+    path: Assets/Scenes/Instruction.unity
+    guid: 7de933bb42394a24c9e0f67e8b9f8176
+  - enabled: 1
     path: Assets/Scenes/CyberRun.unity
     guid: bf852c24984ce714cb8f48bdb094c4f3
   m_configObjects: {}
